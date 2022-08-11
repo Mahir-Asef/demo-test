@@ -9,6 +9,12 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #F5F5F5;
 }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 header {
     display: flex;
     justify-content: space-between;
@@ -167,6 +173,10 @@ nav ul li a {
 .material-symbols-outlined {
     color: #FFBE0B;
 }
+.product-review{
+    margin-left:200px;
+    margin-top: 60px;
+}
 
 /* discount section */
 .discount{
@@ -196,3 +206,96 @@ nav ul li a {
     color: #FFFFFF;
     background: #0062FF;
   }
+  @media only screen and (max-width:480px){
+    /* header section */
+    .header-section{
+        display: none;
+    }
+
+    /* hero section */
+    .hero {
+        width: auto;
+        margin: auto;
+        display: block;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .ipone {
+        margin-top: 40px;
+    }
+    .hero-text {
+        text-align: center;
+    }
+
+    /* Authors Section */
+
+    .authors-btn {
+        margin-left: 25%;
+    }
+    .authors {
+        width: auto;
+        margin: auto;
+        
+    }
+    .explain-authors {
+        display: block;
+    }
+
+    /* For who section */
+    .who-images {
+        display: block;
+    }
+    .who-grid {
+        display: grid;
+        grid-template-columns:1fr;
+    }
+
+    /* demo section */
+    
+    .demo {
+        width: auto;
+        margin:0 auto;
+        margin-top: 78px;
+    }
+    .demo-details {
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .demo-section {
+        display: grid;
+        grid-template-columns:1fr;
+    }
+
+    /* Product section */
+    .hero{
+        width: auto;
+        margin: auto;
+        display: block;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .product-review {
+        margin: 0 auto;
+    }
+
+    /* discount section */
+    .emailFild {
+        width: 350px;
+        height: 70px;
+        background: rgba(58, 134, 255, 0.2);
+        border: 2px solid #2203E4;
+        border-radius: 12px;
+        /* padding-left: 24px; */
+    }
+    .discount-btn {
+        width: 350px;
+        height: 39px;
+        /* padding: 10px 16px; */
+        border: none;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+        background: #0062FF;
+      }
+    }
